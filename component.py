@@ -7,7 +7,7 @@ PAT = 'your_page_access_token'
 
 
 def send_message(sender_id, message_text):
-    r = requests.post("https://graph.facebook.com/v2.6/me/messages",
+    r = requests.post("https://graph.facebook.com/v3.3/me/messages",
 
                       params={"access_token": PAT},
 
@@ -20,7 +20,7 @@ def send_message(sender_id, message_text):
 
 
 def send_img(sender_id, url):
-    r = requests.post("https://graph.facebook.com/v2.6/me/messages",
+    r = requests.post("https://graph.facebook.com/v3.3/me/messages",
 
                       params={"access_token": PAT},
 
